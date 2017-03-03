@@ -1,8 +1,12 @@
 language: node_js
 node_js:
-  - "7.2"
+- '7.2'
 before_script:
-  - npm install -g gulp
-  - npm install
-script:
-  gulp package-app
+- npm install -g gulp
+- npm install
+script: gulp package-app
+deploy:
+  provide: heroku
+  app: blubirds
+  api_key:
+    secure: aMf+OEemdGb3Xl8San8i9iAZMjtFmxGbDau2oQECbBETPe7PYl8ysC5/J34PLXMV6v4x6I4epq9XfsAqTzbXFwJi+yzvSXGOf5ILEb03IsZ/ZL3hQrEycbatiPLCt3bC+37A1pUxKqK/oV5KEeH2x3xyXPDmgsY7WWQ/tvdgYMEp4Mc1E94folxk8CPCBIXL414xCyp3x377XmFUXzKOXFdS17BFiarumdyIy0KnLw7fVuodxvocrnopz1xDvJ/OBetwObDf/OzYZtDaOl36itGvZgxsiJOvPxI2IqCR2/pah/mMvij+FgaTb+UkO3xnLg9cAvFLrE0Ued3He3Eu/6C6lmBk7abHR5jG3NNLb7naYHZAUsVIlCpr//KHgzl2ZYgY1owkHC8h4hBt3oXYKYIJr/9MPJYwwsopWQYZ68qtO7tGKC04H6fuqF6jLtIWwaOrzT6f+31oB5ut4L6omSA/7eIjiYjq4Mz38BNbuAdE50LsRqVnSbSKX6drvNF6WRBCjYJs4bEoYw7v1AsD1/kyBN2L6AKzoFsEizCBB7RKBhsS/APexngYvP6fivNPJSkzmdHaxgakVH41jbtG3XE3SErBX0J/BDRVmOZGEtsH+FRRGle+2x6+/Z85YeZnoPGwzgtJiHtXCicYM9MQzLEwg61wDEaI3WkcKy5C1ws=
